@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire</title>
+    <title>Inscription</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="d-flex flex-column">
-
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg border mt-5 mx-5">
         <img src="" class="img-fluid" alt="">
         <div class="container-fluid">
@@ -99,8 +97,8 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-dark text-white" data-bs-dismiss="modal">Fermer</button>
-                                    <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal"
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal_un">Valider</button>
                                 </div>
                             </div>
@@ -112,7 +110,7 @@
                     <div class="modal fade" id="exampleModal_un" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="panier text-white modal-content">
+                            <div class="text-white modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title text-white fs-5" id="exampleModalLabel"></h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -127,40 +125,136 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
 
-    <main class="d-flex m-auto">
-        <div>
+
+    <main class="text-white d-flex justify-content-center">
+        <div class="row ms-5 p-5 mx-5 col-5">
             <form>
-                <div class=" mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label text-white">Email</label>
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" id="inputEmail3" required>
+                <!-- section nom prenom -->
+                <div class="row mb-2">
+                    <div class="col-sm-3 mb-2">
+                        <p>Nom</p>
+                        <input type="text" class="form-control" placeholder="..." aria-label="nom" required>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="inputPassword3" class="col-sm-6 col-form-label text-white">Mot de Passe</label>
-                    <div class="col-sm-12">
-                        <input type="password" class="form-control" id="inputPassword3" required>
+                    <div class="col-sm-3">
+                        <p>Prénom</p>
+                        <input type="text" class="form-control" placeholder="..." aria-label="prenom" required>
                     </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-sm-12">
-                        <div class="form-check mt-3">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label text-white" for="gridCheck1">
-                                Se souvenir du mot de passe
-                            </label>
+                    <div class="col-sm-6">
+                        <p>Genre</p>
+                        <div class="col-auto">
+                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                            <select class="form-select" id="autoSizingSelect">
+                                <option selected>Veuillez choisir..</option>
+                                <option value="1">Homme</option>
+                                <option value="2">Femme</option>
+                                <option value="3">Kangourou</option>
+                                <option value="4">S.W.A.T</option>
+                                <option value="5">O.T.A.N</option>
+                                <option value="6">W.O.K.E</option>
+                                <option value="7">François Hollande</option>
+                                <option value="8">Talibans</option>
+                                <option value="9">Renault</option>
+                                <option value="10">LFI</option>
+                                <option value="11">Militant</option>
+                                <option value="12">Je sais pas..</option>
+                                <option value="13">Rêve Militant</option>
+                                <option value="14">Trump</option>
+                                <option value="15">Panda</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn bg-black text-white">Se connecter</button>
-                <a class="btn bg-black text-white ms-3" href="inscription.html">S'inscrire</a>
 
-            </form>
+                <!-- section ville pays code postal -->
+                <div class="row mb-2">
+                    <div class="col-sm-5 mb-2">
+                        <p>Ville</p>
+                        <input type="text" class="form-control" placeholder="..." aria-label="ville" required>
+                    </div>
+                    <div class="col-sm-5">
+                        <p>Pays</p>
+                        <div class="col-auto">
+                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                            <select class="form-select" id="autoSizingSelect">
+                                <option selected>...</option>
+                                <option value="1">France</option>
+                                <option value="2">Allemagne</option>
+                                <option value="3">Turquie</option>
+                                <option value="4">Russie</option>
+                                <option value="5">Grèce</option>
+                                <option value="6">Egypte</option>
+                                <option value="7">Roumanie</option>
+                                <option value="8">Iran</option>
+                                <option value="9">Mexique</option>
+                                <option value="10">Pologne</option>
+                                <option value="11">Antartique</option>
+                                <option value="12">Groënland</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm mb-2">
+                        <p>Code Postal</p>
+                        <input type="text" class="form-control" placeholder="..." aria-label="code postal" required>
+                    </div>
+                    <div class="col-sm mb-2">
+                        <p>Téléphone</p>
+                        <input type="text" class="form-control" placeholder="..." aria-label="ville" required>
+                    </div>
+                </div>
+
+                <!-- section email mot de passe -->
+                <div class="mb-2">
+                    <label for="inputPassword3" class="col-sm-12 col-form-label">Email</label>
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="..." required>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="inputPassword3" class="col-sm-12 col-form-label">Mot de Passe</label>
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" placeholder="..." id="inputPassword3" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword3" class="col-sm-12 col-form-label">Confirmation du Mot de Passe</label>
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" placeholder="..." id="inputPassword3" required>
+                    </div>
+                </div>
+                <p>Moyen de Contact : </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked required>
+                    <label class="form-check-label" for="gridRadios1">
+                        SMS
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"
+                        required>
+                    <label class="form-check-label" for="gridRadios2">
+                        Mail
+                    </label>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
+                        required>
+                    <label class="form-check-label" for="gridRadios3">
+                        Ta pas le choix
+                    </label>
+                </div>
+                <button type="submit" class="btn bg-black text-white">S'inscrire</button>
+
+        </div>
+        </form>
+        </div>
+
     </main>
 
 

@@ -5,6 +5,7 @@ body {
     &::before {
         content: "";
         position: fixed;
+        box-sizing: border-box;
         top: 0;
         left: 0;
         width: 100%;
@@ -13,15 +14,31 @@ body {
         filter: blur(2.5px);
         z-index: -1;
     }
+
     nav {
-background: #2b0e0e;
-background: linear-gradient(90deg, rgba(43, 14, 14, 1) 0%, rgba(38, 6, 6, 1) 100%);    }
+        background: #2b0e0e;
+        background: linear-gradient(90deg, rgba(43, 14, 14, 1) 0%, rgba(38, 6, 6, 1) 100%);
+
+        .modal-content {
+            background: #300b0b;
+            background: linear-gradient(90deg, rgba(48, 11, 11, 1) 0%, rgba(115, 16, 16, 1) 53%, rgba(48, 11, 11, 1) 100%);
+            color: white;
+        }
+    }
 
     .interface {
         margin-right: 8rem;
     }
+
     footer {
-background: #540808;
-background: linear-gradient(90deg, rgba(84, 8, 8, 1) 0%, rgba(84, 8, 8, 1) 100%, rgba(199, 18, 18, 1) 100%);        text-align: center;
+        background: #540808;
+        background: linear-gradient(90deg, rgba(84, 8, 8, 1) 0%, rgba(84, 8, 8, 1) 100%, rgba(199, 18, 18, 1) 100%);
+        text-align: center;
+
+        li {
+            list-style-type: none;
+        }
     }
+
+    main {}
 }
