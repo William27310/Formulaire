@@ -21,14 +21,13 @@ body nav {
 body nav .modal-content {
   background: #300b0b;
   background: linear-gradient(90deg, rgb(48, 11, 11) 0%, rgb(115, 16, 16) 53%, rgb(48, 11, 11) 100%);
-  color: white;
 }
 body .interface {
   margin-right: 8rem;
 }
 body footer {
-  background: #540808;
-  background: linear-gradient(90deg, rgb(84, 8, 8) 0%, rgb(84, 8, 8) 100%, rgb(199, 18, 18) 100%);
+  background: #300b0b;
+  background: linear-gradient(90deg, rgb(48, 11, 11) 0%, rgb(115, 16, 16) 53%, rgb(48, 11, 11) 100%);
   text-align: center;
 }
 body footer li {
