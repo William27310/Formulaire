@@ -73,6 +73,8 @@
             <form action="bienvenue.html">
                 <!-- section nom prenom -->
                 <div class="row mb-2">
+                    <p class="fw-bold">* Obligatoire</p>
+
                     <div class="col-sm-3 mb-2">
                         <p>Nom</p>
                         <input type="text" class="form-control" placeholder="..." aria-label="nom" required>
@@ -109,11 +111,11 @@
 
                 <!-- section ville pays code postal -->
                 <div class="row mb-2">
-                    <div class="col-sm-5 mb-2">
+                    <div class="col-sm-5">
                         <p>Ville</p>
                         <input type="text" class="form-control" placeholder="..." aria-label="ville" required>
                     </div>
-                    <div class="col-sm-5 mb-2">
+                    <div class="col-sm-5 mb-3">
                         <p>Pays</p>
                         <div class="col-auto">
                             <label class="visually-hidden" for="autoSizingSelect">Preference</label>
@@ -134,12 +136,12 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-sm mb-2">
+                    <div class="col-sm">
                         <p>Code Postal</p>
                         <input type="text" class="form-control" placeholder="..." aria-label="code postal" required>
                     </div>
-                    <div class="col-sm mb-2">
-                        <p>Téléphone</p>
+                    <div class="col-sm">
+                        <p>Téléphone (Facultatif)</p>
                         <input type="text" class="form-control" placeholder="// Exemple : 07-94-86-32-45"
                             aria-label="ville" required>
                     </div>
@@ -150,6 +152,9 @@
                     <label for="inputPassword3" class="col-sm-12 col-form-label">Email</label>
                     <div class="col-sm-12">
                         <input type="text" class="form-control" placeholder="E-mail" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Please choose a username.
+                        </div>
                     </div>
                 </div>
                 <div class="mb-2">
