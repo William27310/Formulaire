@@ -2,6 +2,11 @@ body {
   position: relative;
   min-height: 100vh;
 }
+@media (max-width: 414px) {
+  body .section_inscription {
+    width: 10rem;
+  }
+}
 body::before {
   content: "";
   position: fixed;
